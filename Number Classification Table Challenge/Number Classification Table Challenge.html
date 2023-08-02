@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                border: 2px;
+            }
+            td {
+                width: 34px;
+                height: 14px;
+            }
+        </style>
+          
+   </head>
+    <body>
+        <table   id="table">
+
+        </table>
+        <script>
+
+            function isPrime(n){
+                let c=0;
+                for(let i=1;i<=n;i++)if(n%i==0)c++;
+                return c==2;
+            }
+            function generate(n){
+                    let tab=document.getElementById("table");
+                    tab.style.border="2px";
+                    let row =tab.insertRow(-1);
+                    let cell1=row.insertCell(0);
+                    cell1.innerHTML=n;
+                    if(n%2==0)cell1.style.background="yellow";
+                    else cell1.style.background="blue";
+                    if(isPrime(n)){
+                        let row2 =tab.insertRow(-1);
+                        let cell2=row2.insertCell(0);
+                        cell2.innerHTML=n;
+                        cell2.style.background="black";
+                        cell2.style.color="white";
+
+                    }
+            }
+            for(let i=0;i<15;i++)generate(i);
+           
+//even yello background
+//prime black background with white text
+//odd blue backgournd 
+        </script>  
+    </body>
+</html>
+

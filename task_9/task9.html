@@ -1,0 +1,24 @@
+<script>
+    function add(n1,n2){
+        return n1+n2;
+    }
+    function multiply(n1,n2){
+        return n1*n2;
+    }
+    function subtract(n1,n2){
+        return n2-n1;
+    }
+    function divide(n1,n2){
+        if(n2!=0) return n1/n2;
+        console.log("Invalid Input??");
+    }
+    function myCalculator(num1,num2,operator){
+        switch(operator){
+            case "+": return add(num1,num2);break;
+            case "*": return multiply(num1,num2);break;
+            case "/": return divide(num1,num2);break;
+            case "-": return subtract(num1,num2);break;
+            default:console.log("Invalid operator");
+        }
+    } console.log(myCalculator(22,0,"+"));
+</script>

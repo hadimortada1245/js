@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(63, 63, 183);
+}
+.big_div{
+    background-color: aliceblue;
+    width: 497px;
+    height: 338px;
+    margin-top: 225px;
+    margin-left: 30%;
+    border-radius: 9%;
+}
+button{ 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 25px;
+    border: 2px rgb(74, 74, 143) solid;
+}
+button:hover{
+    background-color: rgb(3, 73, 73);
+    color: white;
+}
+
+input{
+    margin-top: 22px;
+    margin-left: 41px;
+    width: 383px;
+    height: 51px;
+    border-radius: 38%;
+    background-color: rgb(15, 15, 102);
+    color: aliceblue;
+    font-size: large;
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
